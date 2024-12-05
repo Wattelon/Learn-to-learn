@@ -16,46 +16,50 @@
   /* выше установили ограничения для секции */
   background: #f2f2f2;
   display: flex;
+  align-items: center;
   position: relative;
 }
 
 .header__title {
-  align-self: center;
-  margin-left: 64px;
   width: 730px;
+  margin-left: 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
+  z-index: 1;
 }
 
 .header__subtitle {
-  position: absolute;
   width: 388px;
+  position: absolute;
   left: 64px;
   bottom: 30px;
   line-height: 25px;
   font-size: 18px;
+  font-weight: normal;
+  z-index: 1;
 }
 
 .header__link {
-
+  text-decoration: none;
+  color: #2f80ed;
 }
 
 .header__main-illustration {
+  width: 765px;
+  height: 608px;
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 765px;
-  height: 608px;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  width: 568px;
+  height: 568px;
   position: absolute;
   top: 64px;
   right: 0;
-  width: 568px;
-  height: 568px;
   background: #2f80ed;
 }
 
@@ -70,10 +74,135 @@
   left: 64px;
 }
 
+.description {
+  padding-top: 100px;
+}
+
+.two-columns {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+  margin: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.two-columns__paragraph {
+  margin: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__span-accent {
+  font-weight: 600;
+}
+
+.digits {
+  padding: 100px 0;
+}
+
+.section-title {
+  width: 60%;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table {
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 60px;
+  justify-content: space-between;
+}
+
+.table__cell {
+  width: 250px;
+}
+
+.table__heading {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table__text {
+  margin: 20px 0 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.feynman {
+  height: 890px;
+  background: #f2f2f2 url("../images/feynman.png") no-repeat left bottom;
+  background-size: 867px 637px;
+  padding-top: 100px;
+  position: relative;
+}
+
+.feynman__title {
+  width: 648px;
+  margin: 0 auto 70px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+}
+
+.feynman__subtitle {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  color: #2f80ed;
+  text-decoration: none;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
 }
